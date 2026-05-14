@@ -17,7 +17,7 @@ services:
       - "2379:2379"
 
   postgres1:
-    image: ghcr.io/zalando/spilo-16:3.0-p1
+    image: ghcr.io/zalando/spilo-16:3.3-p3
     container_name: postgres1
     environment:
       SCOPE: postgres-cluster
@@ -34,7 +34,7 @@ services:
       - etcd
 
   postgres2:
-    image: ghcr.io/zalando/spilo-16:3.0-p1
+    image: ghcr.io/zalando/spilo-16:3.3-p3
     container_name: postgres2
     environment:
       SCOPE: postgres-cluster
@@ -51,7 +51,7 @@ services:
       - etcd
 
   postgres3:
-    image: ghcr.io/zalando/spilo-16:3.0-p1
+    image: ghcr.io/zalando/spilo-16:3.3-p3
     container_name: postgres3
     environment:
       SCOPE: postgres-cluster
